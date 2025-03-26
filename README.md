@@ -71,6 +71,26 @@ HybridModel.py -v --batch-size 140 --val-test-batch-size 280 \
 --input-coverage --coverage-norm log --data-dir splitter/ --save-model-path ${path}/tuned-${species}-model.h5
 ```
 
+### EDTA pipeline
+
+```
+EDTA.pl --genome  /lustre/isaac/scratch/madler5/blue_pandora_seq/Genome_Assembly/hifiasm/hifiasm/pacbio-ont-sana-hic-1.hic.p_ctg.fa --sensitive 1 -t 48 --debug 1 --anno 1
+```
+
+> Options used:
+> 
+> --sensitive  : When set to "1" RepeatModeler is used to make a repeat library for TE masking
+> 
+> --anno 1     : When set to "1" GFF file included in output
+> 
+> -t           : Number of threads/CPU assigned
+> 
+> --debug      : When set to "1" will add debug to error output
+
+
+
+
+
 
 
 
