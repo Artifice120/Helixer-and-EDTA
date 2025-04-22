@@ -87,6 +87,11 @@ EDTA.pl --genome  /lustre/isaac/scratch/madler5/blue_pandora_seq/Genome_Assembly
 > 
 > --debug      : When set to "1" will add debug to error output
 
+*NOTE:*
+
+Since the Helitron portion of the pipeline relies on a java environment the memory is hard coded to 120GB over 4 CPUS
+If your node has more CPUS and GB of memory available consider changing the parameters in the 
+```run_helitron_scanner.sh``` shell script
 
 
 
